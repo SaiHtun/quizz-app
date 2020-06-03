@@ -1,28 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h3 class="animate__animated animate__bounce">The Super Quizz 🧙🏻‍♂️</h3>
+    <quizz-panel></quizz-panel>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import QuizzPanel from '@/components/QuizzPanel.vue';
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  components: { 
+    QuizzPanel,
   }
 }
 </script>
 
 <style>
+body {
+  font-family: sans-serif;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 </style>
